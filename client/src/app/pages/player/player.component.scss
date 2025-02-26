@@ -1,0 +1,129 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, sans-serif;
+}
+
+.container {
+  // background-color: black;
+
+  .main-toolbar {
+    .spacer {
+      flex: 1 1 auto;
+    }
+    .toolbar-btn {
+      font-size: 16px;
+      margin-right: 5px;
+      cursor: pointer;
+      color: white;
+    }
+  }
+
+  .content {
+    .logo {
+      margin: 2.5rem;
+      text-align: center;
+      font-size: 26px;
+      color: linear-gradient(to right, #170016, #280F4A, #4E2757, #7E4965, #C59F9F, #F4DAD0);
+
+      .mat-icon {
+        height: 160px !important;
+        width: 160px !important;
+        font-size: 160px !important;
+        background: linear-gradient(to right, #170016, #280F4A, #4E2757, #7E4965, #C59F9F, #F4DAD0);
+        -webkit-background-clip: text;
+        color: transparent;
+        display: inline-block; /* נוסיף תמיכה ב Firefox */
+      }
+    }
+  }
+
+  .media-footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+
+    .time-slider {
+      width: 100% !important;
+      margin-left: 20px;
+      margin-right: 20px;
+      color: white;
+      background-color: white;
+    }
+
+    .media-action-bar {
+      width: 100%;
+      padding: 2.5rem;
+      justify-content: center;
+
+      .mat-icon {
+        height: 48px !important;
+        width: 48px !important;
+        font-size: 48px !important;
+        color: white;
+      }
+    }
+  }
+}
+
+.mat-toolbar {
+  background: linear-gradient(to right, #170016, #280F4A, #4E2757, #7E4965, #C59F9F, #F4DAD0);
+  font-size: large;
+
+  .mat-toolbar-row {
+    color: white;
+  }
+}
+
+.spec {
+  color: white;
+  font-style: inherit;
+  font-weight: 500;
+  margin-left: 50px;
+}
+
+.mat-list {
+  color: white;
+
+  ul {
+    div {
+      color: white;
+    }
+
+    h4,
+    h5,
+    h6 {
+      color: white;
+    }
+
+    mat-divider {
+      background-color: white;
+    }
+  }
+}
+
+.mat-list-item {
+  display: flex;
+  align-items: center;
+
+  .mat-icon {
+    height: 48px !important;
+    width: 48px !important;
+    font-size: 48px !important;
+    margin-right: 16px; /* כדי ליצור מרווח בין הטקסט לאייקון */
+    background: linear-gradient(to right, #170016, #280F4A, #4E2757, #7E4965, #C59F9F, #F4DAD0);
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline-block; /* נוסיף תמיכה ב Firefox */
+  }
+
+  h4,
+  h5,
+  h6 {
+    color: white;
+    margin: 0; /* להסיר שוליים סטנדרטיים מהכותרת */
+  }
+  
+  mat-divider {
+    background-color: white;
+  }
+}
+

@@ -1,0 +1,60 @@
+<div class="container">
+  <mat-toolbar color="primary" class="main-toolbar" *ngIf="currentFile">
+    <span>Audio Player</span>
+    <span class="spacer"></span>
+    <!-- <span class="toolbar-btn" *ngIf="!auth.authenticated" (click)="auth.login()">LOGIN </span>
+    <span class="toolbar-btn" *ngIf="auth.authenticated" (click)="auth.logout()">LOGOUT</span>
+    <span class="toolbar-btn" *ngIf="auth.authenticated" routerLink="/profile">PROFILE</span> -->
+  </mat-toolbar>
+
+  <div class="content">
+    <div class="logo">
+      <mat-icon>music_note</mat-icon>
+      <div>Audio Player</div>
+    </div>
+    <h1>{{ emotion }}</h1>
+    <mat-list color="primary">
+      <h3 mat-subheader class="spec">Songs</h3>
+      <ul *ngFor="let file of files; let i = index" (click)="openFile(file, i)">
+        <div style="display: flex; align-items: center;">
+          <mat-icon style="color:rgb(121 40 124);" color="primary">music_note</mat-icon>
+          <div style="margin-left:1%;">
+            <h4 style="margin-top: 1%;">{{ file.name }}</h4>
+            <h5 style="margin: 0;">by {{ file.artist }}</h5>
+          </div>
+        </div>
+        <h6 *ngIf="currentFile.index === i && state?.error">ERROR</h6>
+        <mat-divider style="margin-top: 2%; margin-bottom: 2%;"></mat-divider>
+      </ul>
+    </mat-list>
+  </div>
+
+  <div class="media-footer" *ngIf="currentFile">
+    <mat-toolbar color="primary">
+      <mat-toolbar-row>
+        {{ state?.readableCurrentTime }}
+        <input type="range" class="time-slider" name="aa" min="0" [max]="state?.duration" step="0.72" [(ngModel)]="state!.currentTime" (ngModelChange)="onSliderChangeEnd($event)">
+        {{ state?.readableDuration }}
+        <!-- <mat-icon color="primary">volume_up</mat-icon> -->
+      </mat-toolbar-row>
+
+      <mat-toolbar-row class="media-action-bar">
+        <button mat-button [disabled]="isFirstPlaying()" (click)="previous()">
+          <mat-icon mat-list-icon>skip_previous</mat-icon>
+        </button>
+
+        <button mat-button (click)="play()" [disabled]="state?.error" *ngIf="!state?.playing">
+          <mat-icon mat-list-icon>play_circle_filled</mat-icon>
+        </button>
+
+        <button mat-button (click)="pause()" *ngIf="state?.playing">
+          <mat-icon mat-list-icon>pause</mat-icon>
+        </button>
+
+        <button mat-button [disabled]="isLastPlaying()" (click)="next()">
+          <mat-icon mat-list-icon>skip_next</mat-icon>
+        </button>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  </div>
+</div>

@@ -42,9 +42,4 @@ https://drive.google.com/drive/folders/1OPHaQ_SYqheBl-WQm9Wxb3V7u4X8oPsc?usp=dri
 - **Personalized playlists** based on user emotions
 - **User-friendly UI** for seamless interaction
 
-## 📩 Contact & Contributions
-Feel free to open an issue or submit a pull request. 
-
-📧 Contact: [Your Email]  
-🌍 GitHub: [Your GitHub Profile]
-
+=

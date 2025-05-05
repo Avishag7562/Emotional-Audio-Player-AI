@@ -1,45 +1,70 @@
-# 🎵 Emotional Audio Player
+🎵 Emotional Audio Player
+🧠 AI-Powered Music Experience Based on Real-Time Emotion Recognition
+📌 Overview
+Emotional Audio Player is a smart music player that adapts to your mood. It uses real-time facial emotion recognition and machine learning to recommend personalized playlists based on how you feel.
 
-## 📌 Overview
-Emotional Audio Player is an AI-based smart audio player that enhances the listening experience by analyzing the user's emotions and selecting playlists accordingly.
+Whether you're happy, sad, or neutral — the music changes with you.
 
-The system uses facial emotion recognition to classify the user's emotional state and recommends appropriate music tracks. The player employs machine learning techniques to ensure accurate emotion detection and music classification.
+🎥 Live Demo / Preview
 
-## 🖼️ Screenshots
-https://drive.google.com/drive/folders/1OPHaQ_SYqheBl-WQm9Wxb3V7u4X8oPsc?usp=drive_link
+⬆️ Replace with a real GIF or video from your project. I can help you create one if needed!
 
+🚀 Installation & Setup
+bash
+Copy
+Edit
+# Clone the repository
+git clone https://github.com/Avishag7562/Emotional-Audio-Player.git
 
-## 🚀 Installation & Setup
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Avishag7562/Emotional-Audio-Player.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd Emotional-Audio-Player
-   ```
-3. Install dependencies (for the Python server):
-   ```bash
-   pip install -r requirements.txt
-   ```
-4. Run the server:
-   ```bash
-   python server/main.py
-   ```
-5. Open the frontend in your browser or run it using your preferred method.
+# Navigate to the project directory
+cd Emotional-Audio-Player
 
-## 🛠️ Technologies Used
-- **Frontend:** Angular
-- **Backend:** Python (Flask)
-- **Machine Learning:** TensorFlow, OpenCV, DeepFace, Random Forest Classifier
-- **Audio Processing:** Librosa
-- **Database:** Not required for this project
+# Install backend dependencies
+pip install -r requirements.txt
 
-## 🎯 Features
-- **Real-time facial emotion detection** using CNN models
-- **Audio feature extraction** for song classification
-- **Machine learning-based emotion classification**
-- **Personalized playlists** based on user emotions
-- **User-friendly UI** for seamless interaction
+# Run the backend server
+python server/main.py
 
-=
+# Run frontend (Angular)
+cd frontend
+npm install
+ng serve
+🛠️ Tech Stack
+Layer	Technology
+Frontend	Angular
+Backend	Flask (Python)
+ML Models	TensorFlow, DeepFace, Random Forest
+Audio	Librosa
+Computer Vision	OpenCV
+No database required	
+
+🎯 Features
+🔍 Real-Time Emotion Detection via webcam
+
+🎧 Emotion-Based Music Classification using Random Forest
+
+🎵 Playlist Recommendations tailored to user's emotional state
+
+👩‍💻 User-Friendly Interface
+
+🧠 Deep Learning Models trained on facial expressions
+
+🧪 Audio Feature Extraction for smarter classification
+
+📸 Screenshots
+🔗 Click here to view screenshots on Google Drive
+
+🌟 Future Improvements
+Deploy as a web app or mobile app
+
+Add voice emotion recognition
+
+Integrate Spotify API for real-world playlists
+
+Track emotion history over time
+
+🙋‍♀️ About Me
+This project was developed as part of my final project in Computer Systems Engineering.
+It demonstrates my skills in AI, full-stack development, and user-focused software design.
+If you're interested in collaborating or hiring – let's talk!
+
